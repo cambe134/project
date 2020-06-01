@@ -6,6 +6,7 @@ class Cli
    puts" Enter a catagory for a meal type!"
    puts " "
    @ingredient = gets.strip.downcase
+   Api.get_meals(@ingredient)
    
   
  end
