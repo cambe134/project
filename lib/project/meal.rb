@@ -4,11 +4,17 @@ class Meal
   
   @@all = []
   
-  def initialize(name, meal_id)
+  def initialize(name:, meal_id:)
     @name = name 
-    @meal_meal = meal_id
+    @meal_id = meal_id
     
-    @@all <<self
+    @@all << self
+ end
+ 
+   def self.all
+   @@all
+   end
+ 
  end
  
  

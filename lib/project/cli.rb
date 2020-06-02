@@ -8,6 +8,8 @@ class Cli
    @ingredient = gets.strip.downcase
    Api.get_meals(@ingredient)
    
+   print_meals(@ingredient)
+   
   
  end
 
